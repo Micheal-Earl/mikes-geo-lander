@@ -105,11 +105,11 @@ public class RocketController : MonoBehaviour {
         
         float rotationThisFrame = rotSpeed * Time.deltaTime;
 
-        if(Input.GetKey(KeyCode.A)) {
+        if(Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)) {
             transform.Rotate(Vector3.left * rotationThisFrame);
         }
 
-        if(Input.GetKey(KeyCode.D)) {
+        if(Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)) {
             transform.Rotate(Vector3.right * rotationThisFrame);
         }
 
